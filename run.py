@@ -19,7 +19,7 @@ def main():
     if arg.train:
         classifier.max_iter = MAX_ITER
         classifier.train()
-        classifier.dump_model()
+        classifier.save()
     if arg.dev:
         try:
             classifier.load_model()
